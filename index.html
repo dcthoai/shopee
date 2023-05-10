@@ -19,9 +19,9 @@
         <div class="grid">
             <div class="navbar">
                 <ul>
-                    <li class="navbar__items navbar__items-separate">Kênh Người Bán</li>
-                    <li class="navbar__items navbar__items-separate">Trở thành Người bán Shopee</li>
-                    <li class="navbar__items navbar__items-separate">Tải ứng dụng</li>
+                    <li class="navbar__items navbar__items-separate"><a href="#">Kênh Người Bán</a></li>
+                    <li class="navbar__items navbar__items-separate"><a href="#">Trở thành Người bán Shopee</a></li>
+                    <li class="navbar__items navbar__items-separate"><a href="#">Tải ứng dụng</a></li>
                     <li class="navbar__items">
                         Kết nối
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -50,21 +50,66 @@
         </div>
         
         <div class="container grid">
-            <div class="container__logo container-row">
-                <img style="width: 100%;" src="./assets/img/logo_shopee.png" alt="Shopee">
+            <div class="container__logo container__row">
+                <a href="#"><img style="width: 100%;" src="./assets/img/logo_shopee.png" alt="Shopee"></a>
             </div>
-            <div class="container__search container-row">
+            <div class="container__search container__row">
                 <input class="container__search-input" type="text">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="container__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div class="container__shopcart container-row">
+            <div class="container__shopcart container__row">
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
+        </div> 
+    </div>
+
+    <div class="slider grid">
+        <div class="container">
+            <div class="container__suggest-banner"></div>
+            <div class="container__banner">
+                <div class="container__banner-items"></div>
+                <div class="container__banner-items"></div>
+            </div>
         </div>
-        
+
+        <div class="nav-app">
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_freeship.png" alt="">
+                <p>Miễn phí vận chuyển</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_voucher.png" alt="">
+                <p>Voucher Giảm đến 200.000Đ</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_outlet.png" alt="">
+                <p>Hàng hiệu Oultlet Giảm 50%</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_selloff.png" alt="">
+                <p>Mã giảm giá</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_trend.png" alt="">
+                <p>Bắt Trend - Giá Sốc</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_phone_card.png" alt="">
+                <p>Nạp thẻ, Dịch vụ & Data</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_international.png" alt="">
+                <p>Hàng Quốc tế</p>
+            </div>
+            <div class="nav-app__items">
+                <img class="nav-app__items-icon" style="width: 48px;" src="./assets/img/icon_cheap.png" alt="">
+                <p>Gì cũng rẻ - Mua là freeship</p>
+            </div>
+        </div>
     </div>
 
     <div style="height: 1000px;"></div>
+    
 
     <script src="https://kit.fontawesome.com/e6d5e92b13.js" crossorigin="anonymous"></script>
 </body>
