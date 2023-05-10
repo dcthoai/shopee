@@ -1,4 +1,8 @@
 
+body{
+    background: var(--background-color);
+}
+
 .header{
     width: 100%;
     height: 126px;
@@ -44,7 +48,7 @@
     position: relative;
 }
 
-.header .container-row{
+.header .container__row{
     margin-top: 12px;
     display: inline-block;
 }
@@ -86,6 +90,11 @@
     right: 3px;
 }
 
+.header .container__search button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .header .container__shopcart{
     margin-left: 24px; 
     position: absolute;
@@ -93,7 +102,80 @@
     right: 48px;
 }
 
-.fa-cart-shopping{
+.header .container__shopcart .fa-cart-shopping{
     font-size: 3rem;
     color: var(--white-color);
+}
+
+/* Begin: Slider */
+
+.slider{
+    margin-top: 140px;
+    background: var(--white-color);
+}
+
+.slider .container{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .container__suggest-banner{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-1e250702a3b6bbab7fa100505f60e7c2_xxhdpi);
+    background-size: cover;
+    flex: 2;
+    margin-right: 8px;
+}
+
+.slider .container__banner{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.slider .container__banner-items{
+    width: 100%;
+    height: 49%;
+    background: #d0a5a5;
+}
+
+.slider .container__banner-items:first-child{
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-f0207c23044c4b2a4f76011f2f07e75d_xhdpi);
+    background-size: cover;
+}
+
+.slider .container__banner-items{
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-9d0fbc063657e299ee82f057b48855fe_xhdpi);
+    background-size: cover;
+}
+
+.slider .nav-app{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider .nav-app__items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+}
+
+.slider .nav-app__items:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.slider .nav-app__items .nav-app__items-icon{
+    display: block;
+}
+
+.slider .nav-app__items p{
+    text-align: center;
 }
