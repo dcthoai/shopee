@@ -17,50 +17,62 @@
 <body>
     <div class="header">
         <div class="grid">
-            <div class="navbar">
-                <ul>
-                    <li class="navbar__items navbar__items-separate"><a href="#">Kênh Người Bán</a></li>
-                    <li class="navbar__items navbar__items-separate"><a href="#">Trở thành Người bán Shopee</a></li>
-                    <li class="navbar__items navbar__items-separate"><a href="#">Tải ứng dụng</a></li>
-                    <li class="navbar__items">
+            <div class="navbar">               
+                <div>
+                    <div class="navbar__items navbar__items-separate"><a href="#">Kênh Người Bán</a></div>
+                    <div class="navbar__items navbar__items-separate"><a href="#">Trở thành Người bán Shopee</a></div>
+                    <div class="navbar__items navbar__items-separate"><a href="#">Tải ứng dụng</a></div>
+                    <div class="navbar__items">
                         Kết nối
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li class="navbar__items">
+                    </div>
+                </div>               
+                
+                <div>
+                    <div class="navbar__items">
                         <i class="fa-regular fa-bell"></i>
                         <a href="#">Thông Báo</a>
-                    </li>
-                    <li class="navbar__items">
+                    </div>
+                    <div class="navbar__items">
                         <i class="fa-regular fa-circle-question"></i>
                         <a href="#">Hỗ Trợ</a>
-                    </li>
-                    <li class="navbar__items">
+                    </div>
+                    <div class="navbar__items">
                         <i class="fa-solid fa-globe"></i>
                         Tiếng Việt
                         <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li class="navbar__items navbar__items-separate"><a href="#">Đăng Ký</a></li>
-                    <li class="navbar__items"><a href="#">Đăng Nhập</a></li>
-                </ul>
+                    </div>
+                    <div class="navbar__items navbar__items-separate"><a href="#">Đăng Ký</a></div>
+                    <div class="navbar__items"><a href="#">Đăng Nhập</a></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="container__logo container__row">
+                    <a href="#"><img style="width: 100%;" src="./assets/img/logo_shopee.png" alt="Shopee"></a>
+                </div>
+                <div class="container__search container__row">
+                    <input class="container__search-input" type="text" placeholder="Đăng kí và nhận voucher bạn mới đến 70K!">
+                    <button id="container__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="container__shopcart container__row">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+
+            <div class="suggest__links">
+                <a href="#" class="suggest__links-item">iphone 14 Pro Max</a>
+                <a href="#" class="suggest__links-item">Dép</a>
+                <a href="#" class="suggest__links-item">Áo phông</a>
+                <a href="#" class="suggest__links-item">Gấu bông</a>
+                <a href="#" class="suggest__links-item">Điện thoại giá rẻ</a>
+                <a href="#" class="suggest__links-item">Đầm dự tiệc</a>
+                <a href="#" class="suggest__links-item">Kính</a>
+                <a href="#" class="suggest__links-item">Đồ dùng học tập</a>
+                <a href="#" class="suggest__links-item">Áo khoác</a>
             </div>
         </div>
-        
-        <div class="container grid">
-            <div class="container__logo container__row">
-                <a href="#"><img style="width: 100%;" src="./assets/img/logo_shopee.png" alt="Shopee"></a>
-            </div>
-            <div class="container__search container__row">
-                <input class="container__search-input" type="text">
-                <button id="container__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="container__shopcart container__row">
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div> 
     </div>
 
     <div class="slider grid">
@@ -108,8 +120,180 @@
         </div>
     </div>
 
+    <div class="directory">
+        <div class="directory__heading">DANH MỤC</div>
+        <div class="wrapper">
+            <ul>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b_tn">
+                        <p>Thời Trang Nam</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca_tn">
+                        <p>Điện Thoại & Phụ Kiện</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/978b9e4cb61c611aaaf58664fae133c5_tn">
+                        <p>Thiết Bị Điện Tử</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d_tn">
+                        <p>Máy Tính & Laptop</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/ec14dd4fc238e676e43be2a911414d4d_tn">
+                        <p>Máy Ảnh & Máy Quay Phim</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260_tn">
+                        <p>Đồng Hồ</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de_tn">
+                        <p>Giày Dép Nam</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857_tn">
+                        <p>Thiết Bị Điện Gia Dụng</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/6cb7e633f8b63757463b676bd19a50e4_tn">
+                        <p>Thể Thao & Du Lịch</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/3fb459e3449905545701b418e8220334_tn">
+                        <p>Ô Tô & Xe Máy & Xe Đạp</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/18fd9d878ad946db2f1bf4e33760c86f_tn">
+                        <p>Balo & Túi Ví Nam</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/ce8f8abc726cafff671d0e5311caa684_tn">
+                        <p>Đồ Chơi</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/cdf21b1bf4bfff257efe29054ecea1ec_tn">
+                        <p>Chăm Sóc Thú Cưng</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/e4fbccba5e1189d1141b9d6188af79c0_tn">
+                        <p>Dịch Vụ & Thiết Bị Tiện Ích</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d_tn">
+                        <p>Thời Trang Nữ</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/099edde1ab31df35bc255912bab54a5e_tn">
+                        <p>Mẹ & Bé</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/24b194a695ea59d384768b7b471d563f_tn">
+                        <p>Nhà Cửa & Đời Sống</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/ef1f336ecc6f97b790d5aae9916dcb72_tn">
+                        <p>Sắc Đẹp</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/49119e891a44fa135f5f6f5fd4cfc747_tn">
+                        <p>Sức Khỏe</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/48630b7c76a7b62bc070c9e227097847_tn">
+                        <p>Giày Dép Nữ</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/fa6ada2555e8e51f369718bbc92ccc52_tn">
+                        <p>Túi Ví Nữ</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/8e71245b9659ea72c1b4e737be5cf42e_tn">
+                        <p>Phụ Kiện & Trang Sức Nữ</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/c432168ee788f903f1ea024487f2c889_tn">
+                        <p>Bách Hóa Online</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/36013311815c55d303b0e6c62d6a8139_tn">
+                        <p>Nhà Sách Online</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn">
+                        <p>Thời Trang Trẻ Em</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/cd8e0d2e6c14c4904058ae20821d0763_tn">
+                        <p>Giặt Giũ & Chăm Sóc N...</p>
+                    </a>
+                </li>
+                <li class="wrapper__item">
+                    <a class="wrapper__item-link" href="#">
+                        <img src="https://down-vn.img.susercontent.com/file/b0f78c3136d2d78d49af71dd1c3f38c1_tn">
+                        <p>Voucher & Dịch Vụ</p>
+                    </a> 
+                </li>
+                <!-- <li class="wrapper__item"></li> -->
+            </ul>
+        </div>
+    </div>
+
     <div style="height: 1000px;"></div>
-    
 
     <script src="https://kit.fontawesome.com/e6d5e92b13.js" crossorigin="anonymous"></script>
 </body>

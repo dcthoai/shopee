@@ -26,7 +26,6 @@ body{
     display: inline-block;
     list-style: none;
     line-height: 1.5;
-    font-size: 1.4rem;
     margin: 8px;
     color: var(--white-color);
 }
@@ -34,6 +33,11 @@ body{
 .header .navbar__items a{
     text-decoration: none;
     color: var(--white-color);
+}
+
+.header .navbar__items i{
+    display: inline-block;
+    margin: 4px;
 }
 
 .header .navbar__items-separate::after{
@@ -72,14 +76,15 @@ body{
 .header .container__search-input{
     position: absolute;
     left: 0;
-    right: 54px;
+    right: 70px;
     height: 100%;
     border: none;
     border-radius: 3px;
+    text-indent: 16px;
 }
 
 .header .container__search button{
-    width: 48px;
+    width: 64px;
     color: var(--white-color);
     background-color: #f53d2d;
     border: none;
@@ -107,10 +112,24 @@ body{
     color: var(--white-color);
 }
 
+.header .suggest__links{
+    margin-left: 196px;
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .suggest__links .suggest__links-item{
+    margin: 2px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
 /* Begin: Slider */
 
 .slider{
-    margin-top: 140px;
+    margin-top: 126px;
+    padding-top: 32px;
     background: var(--white-color);
 }
 
@@ -178,4 +197,63 @@ body{
 
 .slider .nav-app__items p{
     text-align: center;
+}
+
+/* Begin: Derectory */
+
+.directory{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--white-color);
+}
+
+.directory .directory__heading{
+    width: 100%;
+    margin: 24px;
+    font-size: 1.6rem;
+    color: #888;
+}
+
+.directory .wrapper ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.directory .wrapper__item{
+    list-style: none;
+    width: 120px;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+}
+
+.directory .wrapper__item:hover{
+    box-shadow: 0 2px 5px 0 #d3d3d3;
+}
+
+.directory .wrapper__item-link{
+    color: var(--black-color);
+    background: var(--white-color);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.directory .wrapper__item-link img{
+    display: block;
+    width: 70%;
+    margin-top: 10%;
+}
+
+.directory .wrapper__item-link p{
+    display: block;
+    width: 88%;
+    height: 54px;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
 }
