@@ -28,6 +28,7 @@ body{
     line-height: 1.5;
     margin: 8px;
     color: var(--white-color);
+    position: relative;
 }
 
 .header .navbar__items a{
@@ -46,6 +47,100 @@ body{
     border-right: 1px solid #fb9182;
     position: relative;
     left: 9px;
+}
+
+.header .notify{
+    margin-top: 12px;
+    width: 428px;
+    background-color: var(--white-color);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border: .1px solid #eee;
+    border-radius: 2px;
+    display: none;
+}
+
+.header .navbar__items-notify:hover .notify{
+    display: block;
+}
+
+.header .notify__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+.header .notify__info .notify__info-img{
+    width: 10rem;
+    height: 10rem;
+    background: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/99e561e3944805a023e87a81d4869600.png);
+    background-size: contain;
+}
+
+.header .notify__info p{
+    color: var(--black-color);
+}
+
+.header .notify__nav{
+    height: 4.8rem;
+    background-color: #eee;
+    display: flex;
+}
+
+.header .notify .notify__nav-link{
+    color: var(--black-color);
+    line-height: 4.8rem;
+    flex: 1;
+    text-align: center;
+}
+
+.header .notify__nav-link:hover{
+    color: #f53d2d;
+    background-color: #ccc;
+}
+
+.header .navbar__items .languages{
+    position: absolute;
+    right: 0;
+    margin-top: 12px;
+    width: 214px;
+    border: 0.1px solid #eee;
+    border-radius: 2px;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .navbar__items .languages__item{
+    width: 100%;
+    padding-left: 1.6rem;
+    flex: 1;
+    line-height: 4rem;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.header .navbar__items:hover .navbar__items-info{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header .navbar__items-lang:hover .navbar__items-info{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header .navbar__items-lang:hover .languages{
+    display: flex;
+}
+
+.header .navbar__items .languages__item:hover{
+    color: #f53d2d;
+    background-color: #eee;
+    cursor: pointer;
 }
 
 .header .container{
