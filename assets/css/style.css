@@ -3,6 +3,7 @@ body{
     background: var(--background-color);
 }
 
+/* Begin: Header */
 .header{
     width: 100%;
     height: 126px;
@@ -12,6 +13,7 @@ body{
     z-index: 1;
 }
 
+/* Begin: Navigation */
 .header .navbar{
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,11 @@ body{
     margin: 8px;
     color: var(--white-color);
     position: relative;
+}
+
+.header .navbar__items:hover .navbar__items-info{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .header .navbar__items a{
@@ -49,6 +56,7 @@ body{
     left: 9px;
 }
 
+/* Begin: Notification */
 .header .notify{
     margin-top: 12px;
     width: 428px;
@@ -100,7 +108,9 @@ body{
     color: #f53d2d;
     background-color: #ccc;
 }
+/* End: Notification */
 
+/* Begin: Swap languages */
 .header .navbar__items .languages{
     position: absolute;
     right: 0;
@@ -123,11 +133,6 @@ body{
     background-color: var(--white-color);
 }
 
-.header .navbar__items:hover .navbar__items-info{
-    opacity: 0.8;
-    cursor: pointer;
-}
-
 .header .navbar__items-lang:hover .navbar__items-info{
     opacity: 0.8;
     cursor: pointer;
@@ -142,6 +147,8 @@ body{
     background-color: #eee;
     cursor: pointer;
 }
+/* End: Swap languages */
+/* End: Navigation */
 
 .header .container{
     position: relative;
@@ -159,6 +166,7 @@ body{
     margin-right: 48px;
 }
 
+/* Search */
 .header .container__search{
     width: 72%;
     height: 42px;
@@ -195,6 +203,7 @@ body{
     cursor: pointer;
 }
 
+/* Shop cart */
 .header .container__shopcart{
     margin-left: 24px; 
     position: absolute;
@@ -207,6 +216,7 @@ body{
     color: var(--white-color);
 }
 
+/* Suggest products */
 .header .suggest__links{
     margin-left: 196px;
     width: 72%;
@@ -219,9 +229,9 @@ body{
     text-decoration: none;
     color: var(--white-color);
 }
+/* End: Header */
 
-/* Begin: Slider */
-
+/* Begin: Banner advertisement */
 .slider{
     margin-top: 126px;
     padding-top: 32px;
@@ -293,9 +303,9 @@ body{
 .slider .nav-app__items p{
     text-align: center;
 }
+/* End: Banner advertisement*/
 
 /* Begin: Derectory */
-
 .directory{
     margin-top: 24px;
     display: flex;
@@ -352,3 +362,4 @@ body{
     margin: 0;
     overflow: hidden;
 }
+/* End: Directory */
