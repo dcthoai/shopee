@@ -105,7 +105,7 @@ body{
     position: absolute;
     right: 0;
     margin-top: 12px;
-    width: 214px;
+    width: 14rem;
     border: 0.1px solid #eee;
     border-radius: 2px;
     z-index: 1;
@@ -118,7 +118,7 @@ body{
     width: 100%;
     padding-left: 1.6rem;
     flex: 1;
-    line-height: 4rem;
+    line-height: 3.6rem;
     color: var(--black-color);
     background-color: var(--white-color);
 }
