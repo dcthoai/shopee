@@ -7,7 +7,7 @@ body{
 .header{
     width: 100%;
     height: 126px;
-    background: linear-gradient(180deg, #f53d2d, #f63);
+    background: linear-gradient(180deg, var(--primary-color), #f63);
     position: fixed;
     top: 0;
     z-index: 1;
@@ -29,6 +29,7 @@ body{
     list-style: none;
     line-height: 1.5;
     margin: 8px;
+    margin-bottom: 0;
     color: var(--white-color);
     position: relative;
 }
@@ -58,15 +59,25 @@ body{
 
 /* Begin: Notification */
 .header .notify{
-    margin-top: 12px;
-    width: 428px;
-    background-color: var(--white-color);
     position: absolute;
+    top: 50%;
     right: 0;
     z-index: 1;
+    display: none;
+    transform-origin: 90% top;
+    animation: Growth ease-in 0.2s;
+}
+
+.header .notify .notify__wrapper{
+    width: 42rem;
+    background-color: var(--white-color);
     border: .1px solid #eee;
     border-radius: 2px;
-    display: none;
+}
+
+.header .notify .triangel__border{
+    margin-left: calc(100% - 4.6rem);
+    transform: translateY(1px);
 }
 
 .header .navbar__items-notify:hover .notify{
@@ -113,19 +124,29 @@ body{
 /* Begin: Swap languages */
 .header .navbar__items .languages{
     position: absolute;
+    top: 50%;
     right: 0;
-    margin-top: 12px;
-    width: 14rem;
-    border: 0.1px solid #eee;
-    border-radius: 2px;
     z-index: 1;
     display: none;
     flex-direction: column;
     align-items: center;
+    transform-origin: 60% top;
+    animation: Growth ease-in 0.2s;
 }
 
-.header .navbar__items .languages__item{
-    width: 100%;
+.header .navbar__items .languages .triangel__border{
+    margin-left: 60%;
+    transform: translateY(1px);
+}
+
+.header .navbar__items .languages .languages__wrapper{
+    width: 16rem;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.header .navbar__items .languages__wrapper-item{
     padding-left: 1.6rem;
     flex: 1;
     line-height: 3.6rem;
@@ -139,10 +160,10 @@ body{
 }
 
 .header .navbar__items-lang:hover .languages{
-    display: flex;
+    display: block;
 }
 
-.header .navbar__items .languages__item:hover{
+.header .navbar__items .languages__wrapper-item:hover{
     color: #f53d2d;
     background-color: #eee;
     cursor: pointer;
@@ -152,6 +173,7 @@ body{
 
 .header .container{
     position: relative;
+    margin-top: 8px;
 }
 
 .header .container__row{
@@ -320,6 +342,10 @@ body{
     color: #888;
 }
 
+.directory .wrapper{
+    overflow: hidden;
+}
+
 .directory .wrapper ul{
     display: flex;
     padding: 0;
@@ -329,7 +355,7 @@ body{
 
 .directory .wrapper__item{
     list-style: none;
-    width: 120px;
+    min-width: 120px;
     border-right: 1px solid rgba(0, 0, 0, .05);
 }
 

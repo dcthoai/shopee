@@ -4,6 +4,7 @@
     --black-color: #000;
     --text-color: #333;
     --background-color: #f5f5f5;
+    --primary-color: #f53d2d;
 }
 
 *{
@@ -30,4 +31,20 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+@keyframes Growth{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.triangel__border{
+    width: 1.2rem;
+    height: 1rem;
+    border: 1.2rem solid;
+    border-color: transparent transparent var(--white-color) transparent;
 }
