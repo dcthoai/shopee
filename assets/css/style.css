@@ -64,7 +64,7 @@ body{
     right: 0;
     z-index: 1;
     display: none;
-    transform-origin: 90% top;
+    transform-origin: calc(100% - 3.6rem) 1rem;
     animation: Growth ease-in 0.2s;
 }
 
@@ -130,7 +130,7 @@ body{
     display: none;
     flex-direction: column;
     align-items: center;
-    transform-origin: 60% top;
+    transform-origin: calc(100% - 5rem) 1.2rem;
     animation: Growth ease-in 0.2s;
 }
 
