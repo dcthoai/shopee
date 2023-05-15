@@ -42,9 +42,8 @@ html{
     }
 }
 
-.triangel__border{
+.triangle__border{
     width: 1.2rem;
-    height: 1rem;
     border: 1.2rem solid;
     border-color: transparent transparent var(--white-color) transparent;
 }
