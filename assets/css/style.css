@@ -431,3 +431,66 @@ body{
     overflow: hidden;
 }
 /* End: Directory */
+
+/* Flashsale */
+
+.flashsale{
+    margin-top: 2.4rem;
+    background-color: var(--white-color);
+}
+
+.flashsale .flashsale__header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.6rem;
+}
+
+.flashsale .flashsale__header-icon{
+    margin-left: 1.6rem;
+    width: 12rem;
+    height: 3rem;
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fb1088de81e42c4e538967ec12cb5caa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flashsale .flashsale__content{
+    margin-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.flashsale .flashsale__content ul{
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+}
+
+.flashsale .product{
+    list-style: none;
+    
+}
+
+.flashsale .product__link{
+
+}
+
+.flashsale .product__link-info{
+
+}
+
+.flashsale .wrapper{
+
+}
+
+.flashsale .wrapper__title{
+
+}
+
+.flashsale .wrapper__img-product{
+    width: 18rem;
+}
+
+.flashsale .wrapper__sale{
+
+}
+
