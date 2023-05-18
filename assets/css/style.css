@@ -76,8 +76,8 @@ body{
 }
 
 .header .notify .triangle__border{
-    margin-left: calc(100% - 4.6rem);
-    transform: translateY(1px);
+    margin-left: calc(100% - 4.8rem);
+    transform: translateY(2px);
 }
 
 .header .navbar__items-notify:hover .notify{
@@ -130,13 +130,13 @@ body{
     display: none;
     flex-direction: column;
     align-items: center;
-    transform-origin: calc(100% - 5rem) 1.2rem;
+    transform-origin: calc(100% - 5.2rem) 1.2rem;
     animation: Growth ease-in 0.2s;
 }
 
 .header .navbar__items .languages .triangle__border{
-    margin-left: 60%;
-    transform: translateY(1px);
+    margin-left: calc(100% - 6.8rem);
+    transform: translateY(2px);
 }
 
 .header .navbar__items .languages .languages__wrapper{
@@ -254,8 +254,8 @@ body{
 
 .header .container__shopcart-wrapper .triangle__border{
     margin-top: 4px;
-    margin-left: calc(100% - 4.2rem);
-    transform: translateY(1px);
+    margin-left: calc(100% - 4.6rem);
+    transform: translateY(2px);
 }
 
 .header .container__shopcart-wrapper__info{
@@ -441,7 +441,6 @@ body{
 
 .flashsale .flashsale__header{
     display: flex;
-    flex-direction: column;
     padding-top: 1.6rem;
 }
 
@@ -452,6 +451,10 @@ body{
     background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fb1088de81e42c4e538967ec12cb5caa.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.flashsale .flashsale__header-timer{
+    margin-left: 2rem;
 }
 
 .flashsale .flashsale__content{
