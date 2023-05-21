@@ -15,7 +15,7 @@ html{
     font-size: 10px;
     line-height: 1.6rem;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
 }
 
 .grid{
@@ -52,6 +52,7 @@ html{
 /* Countdown timer */
 .countdown-timer{
     display: flex;
+    margin-top: 2px;
 }
 
 .countdown-timer__wrapper{
@@ -59,7 +60,7 @@ html{
     position: relative;
     margin-right: 4px;
     padding: 0 2px;
-    height: 18px;
+    height: 16px;
     border-radius: 2px;
     background: #000;
 }
@@ -67,15 +68,15 @@ html{
 .countdown-timer .time-part{
     width: 8px;
     text-align: center;
-    height: 18px;
-    overflow: hidden;
+    height: 16px;
     display: inline-block;
+    overflow: hidden;
 }
 
 .countdown-timer .time-part .digit{
     display: inline-block;
     width: 8px;
-    height: 18px;
+    height: 16px;
     color: #fff;
     font-weight: 500;
 }
@@ -102,52 +103,52 @@ html{
 
 @keyframes hours-ones{
              0%{ transform: translateY(0px);}
-    33.3333333%{ transform: translateY(-18px);}
-    66.6666667%{ transform: translateY(-36px);}
+    33.3333333%{ transform: translateY(-16px);}
+    66.6666667%{ transform: translateY(-32px);}
 }
 
 @keyframes minutes-hexa{
              0%{ transform: translateY(0px);}
-    16.6666667%{ transform: translateY(-18px);}
-    33.3333333%{ transform: translateY(-36px);}
-            50%{ transform: translateY(-54px);}
-    66.6666667%{ transform: translateY(-72px);}
-    83.3333333%{ transform: translateY(-90px);}
+    16.6666667%{ transform: translateY(-16px);}
+    33.3333333%{ transform: translateY(-32px);}
+            50%{ transform: translateY(-48px);}
+    66.6666667%{ transform: translateY(-64px);}
+    83.3333333%{ transform: translateY(-80px);}
 }
 
 @keyframes minutes-ones{
      0%{ transform: translateY(0px);}
-    10%{ transform: translateY(-18px);}
-    20%{ transform: translateY(-36px);}
-    30%{ transform: translateY(-54px);}
-    40%{ transform: translateY(-72px);}
-    50%{ transform: translateY(-90px);}
-    60%{ transform: translateY(-108px);}
-    70%{ transform: translateY(-126px);}
-    80%{ transform: translateY(-144px);}
-    90%{ transform: translateY(-162px);}
+    10%{ transform: translateY(-16px);}
+    20%{ transform: translateY(-32px);}
+    30%{ transform: translateY(-48px);}
+    40%{ transform: translateY(-64px);}
+    50%{ transform: translateY(-80px);}
+    60%{ transform: translateY(-96px);}
+    70%{ transform: translateY(-112px);}
+    80%{ transform: translateY(-128px);}
+    90%{ transform: translateY(-144px);}
 }
 
 @keyframes seconds-hexa{
              0%{ transform: translateY(0px);}
-    16.6666667%{ transform: translateY(-18px);}
-    33.3333333%{ transform: translateY(-36px);}
-            50%{ transform: translateY(-54px);}
-    66.6666667%{ transform: translateY(-72px);}
-    83.3333333%{ transform: translateY(-90px);}
+    16.6666667%{ transform: translateY(-16px);}
+    33.3333333%{ transform: translateY(-32px);}
+            50%{ transform: translateY(-48px);}
+    66.6666667%{ transform: translateY(-64px);}
+    83.3333333%{ transform: translateY(-80px);}
 }
 
 @keyframes seconds-ones{
      0%{ transform: translateY(0px);}
-    10%{ transform: translateY(-18px);}
-    20%{ transform: translateY(-36px);}
-    30%{ transform: translateY(-54px);}
-    40%{ transform: translateY(-72px);}
-    50%{ transform: translateY(-90px);}
-    60%{ transform: translateY(-108px);}
-    70%{ transform: translateY(-126px);}
-    80%{ transform: translateY(-144px);}
-    90%{ transform: translateY(-162px);}
+    10%{ transform: translateY(-16px);}
+    20%{ transform: translateY(-32px);}
+    30%{ transform: translateY(-48px);}
+    40%{ transform: translateY(-64px);}
+    50%{ transform: translateY(-80px);}
+    60%{ transform: translateY(-96px);}
+    70%{ transform: translateY(-112px);}
+    80%{ transform: translateY(-128px);}
+    90%{ transform: translateY(-144px);}
 }
 /* End: Countdown timer */
 
