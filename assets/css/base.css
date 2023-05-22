@@ -82,82 +82,97 @@ html{
 }
 
 .countdown-timer .time-part.hours.ones .digit-wrapper{
-    animation: hours-ones 10800s 1 cubic-bezier(1, 0, 1, 0);
+    animation: hours-ones 10800s 1 ease-in-out;
 }
 
 .countdown-timer .time-part.minutes.hexa .digit-wrapper{
-    animation: minutes-hexa 3600s 3 cubic-bezier(1, 0, 1, 0);
+    animation: minutes-hexa 3600s 3 ease-in-out;
 }
 
 .countdown-timer .time-part.minutes.ones .digit-wrapper{
-    animation: minutes-ones 600s 18 cubic-bezier(1, 0, 1, 0);
+    animation: minutes-ones 600s 18 ease-in-out;
 }
 
 .countdown-timer .time-part.seconds.hexa .digit-wrapper{
-    animation: seconds-hexa 60s 180 cubic-bezier(1, 0, 1, 0);
+    animation: seconds-hexa 60s 180 ease-in-out;
 }
 
 .countdown-timer .time-part.seconds.ones .digit-wrapper{
-    animation: seconds-ones 10s 1080 cubic-bezier(1, 0, 1, 0);
+    animation: seconds-ones 10s 1080 ease-in-out;
 }
 
 @keyframes hours-ones{
              0%{ transform: translateY(-16px);}
-    33.3333333%{ transform: translateY(-32px);}
-    66.6666667%{ transform: translateY(-48px);}
+    33.32407407%{ transform: translateY(-16px);}
+    33.33333333%{ transform: translateY(-32px);}
+    66.65740740%{ transform: translateY(-32px);}
+    66.66666667%{ transform: translateY(-48px);}
+    99.99074074%{ transform: translateY(-48px);}
+    99.99074075%{ transform: translateY(0px);}
+           100%{ transform: translateY(-16px);}
 }
 
 @keyframes minutes-hexa{
              0%{ transform: translateY(-16px);}
-    16.6666667%{ transform: translateY(-32px);}
-    33.3333333%{ transform: translateY(-48px);}
-            50%{ transform: translateY(-64px);}
-    66.6666667%{ transform: translateY(-80px);}
-    83.3333333%{ transform: translateY(-96px);}
+    16.63888889%{ transform: translateY(-16px);}
+    16.66666667%{ transform: translateY(-32px);}
+    33.30555555%{ transform: translateY(-32px);}
+    33.33333333%{ transform: translateY(-48px);}
+    49.97222222%{ transform: translateY(-48px);}
+             50%{ transform: translateY(-64px);}
+    66.63888889%{ transform: translateY(-64px);}
+    66.66666667%{ transform: translateY(-80px);}
+    82.30555555%{ transform: translateY(-80px);}
+    83.33333333%{ transform: translateY(-96px);}
+    99.97222222%{ transform: translateY(-96px);}
+    99.97222223%{ transform: translateY(0px);}
+            100%{ transform: translateY(-16px);}
 }
 
 @keyframes minutes-ones{
-     0%{ transform: translateY(-16px);}
-    10%{ transform: translateY(-16px);}
-    11%{ transform: translateY(-32px);}
-    20%{ transform: translateY(-32px);}
-    21%{ transform: translateY(-48px);}
-    30%{ transform: translateY(-48px);}
-    31%{ transform: translateY(-64px);}
-    40%{ transform: translateY(-64px);}
-    41%{ transform: translateY(-80px);}
-    50%{ transform: translateY(-80px);}
-    51%{ transform: translateY(-96px);}
-    60%{ transform: translateY(-96px);}
-    61%{ transform: translateY(-112px);}
-    70%{ transform: translateY(-112px);}
-    71%{ transform: translateY(-128px);}
-    80%{ transform: translateY(-128px);}
-    81%{ transform: translateY(-144px);}
-    90%{ transform: translateY(-144px);}
-    91%{ transform: translateY(-160px);}
-    99.9999999%{ transform: translateY(-160px);}
-    100%{ transform: translateY(0);}
+             0%{ transform: translateY(-16px);}
+    09.8333333%{ transform: translateY(-16px);}
+            10%{ transform: translateY(-32px);}
+    19.8333333%{ transform: translateY(-32px);}
+            20%{ transform: translateY(-48px);}
+    29.8333333%{ transform: translateY(-48px);}
+            30%{ transform: translateY(-64px);}
+    39.8333333%{ transform: translateY(-64px);}
+            40%{ transform: translateY(-80px);}
+    49.8333333%{ transform: translateY(-80px);}
+            50%{ transform: translateY(-96px);}
+    59.8333333%{ transform: translateY(-96px);}
+            60%{ transform: translateY(-112px);}
+    69.8333333%{ transform: translateY(-112px);}
+            70%{ transform: translateY(-128px);}
+    79.8333333%{ transform: translateY(-128px);}
+            80%{ transform: translateY(-144px);}
+    89.8333333%{ transform: translateY(-144px);}
+            90%{ transform: translateY(-160px);}
+    90.0000001%{ transform: translateY(0px);}
+    99.8333333%{ transform: translateY(0px);}
+           100%{ transform: translateY(-16px);}
 }
 
 @keyframes seconds-hexa{
              0%{ transform: translateY(-16px);}
-            16%{ transform: translateY(-16px);}
+            15%{ transform: translateY(-16px);}
     16.6666667%{ transform: translateY(-32px);}
-    32.6666667%{ transform: translateY(-32px);}
+    31.6666667%{ transform: translateY(-32px);}
     33.3333333%{ transform: translateY(-48px);}
-    49.3333333%{ transform: translateY(-48px);}
+    48.3333333%{ transform: translateY(-48px);}
             50%{ transform: translateY(-64px);}
-            66%{ transform: translateY(-64px);}
+            65%{ transform: translateY(-64px);}
     66.6666667%{ transform: translateY(-80px);}
-    82.6666667%{ transform: translateY(-80px);}
+    81.6666667%{ transform: translateY(-80px);}
     83.3333333%{ transform: translateY(-96px);}
-    99.9999999%{ transform: translateY(-96px);}
+    83.3333334%{ transform: translateY(0px);}
+    98.3333333%{ transform: translateY(0px);}
            100%{ transform: translateY(-16px);}
 }
 
 @keyframes seconds-ones{
-    0%{ transform: translateY(-16px);}
+     0%{ transform: translateY(-16px);}
     10%{ transform: translateY(-32px);}
     20%{ transform: translateY(-48px);}
     30%{ transform: translateY(-64px);}
@@ -167,7 +182,8 @@ html{
     70%{ transform: translateY(-128px);}
     80%{ transform: translateY(-144px);}
     90%{ transform: translateY(-160px);}
-    90.000001%{ transform: translateY(0);}
+    90.0000001%{ transform: translateY(0px);}
+    100%{ transform: translateY(-16px);}
 }
 /* End: Countdown timer */
 
