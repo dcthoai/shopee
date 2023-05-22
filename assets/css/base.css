@@ -102,53 +102,72 @@ html{
 }
 
 @keyframes hours-ones{
-             0%{ transform: translateY(0px);}
-    33.3333333%{ transform: translateY(-16px);}
-    66.6666667%{ transform: translateY(-32px);}
+             0%{ transform: translateY(-16px);}
+    33.3333333%{ transform: translateY(-32px);}
+    66.6666667%{ transform: translateY(-48px);}
 }
 
 @keyframes minutes-hexa{
-             0%{ transform: translateY(0px);}
-    16.6666667%{ transform: translateY(-16px);}
-    33.3333333%{ transform: translateY(-32px);}
-            50%{ transform: translateY(-48px);}
-    66.6666667%{ transform: translateY(-64px);}
-    83.3333333%{ transform: translateY(-80px);}
+             0%{ transform: translateY(-16px);}
+    16.6666667%{ transform: translateY(-32px);}
+    33.3333333%{ transform: translateY(-48px);}
+            50%{ transform: translateY(-64px);}
+    66.6666667%{ transform: translateY(-80px);}
+    83.3333333%{ transform: translateY(-96px);}
 }
 
 @keyframes minutes-ones{
-     0%{ transform: translateY(0px);}
+     0%{ transform: translateY(-16px);}
     10%{ transform: translateY(-16px);}
+    11%{ transform: translateY(-32px);}
     20%{ transform: translateY(-32px);}
+    21%{ transform: translateY(-48px);}
     30%{ transform: translateY(-48px);}
+    31%{ transform: translateY(-64px);}
     40%{ transform: translateY(-64px);}
+    41%{ transform: translateY(-80px);}
     50%{ transform: translateY(-80px);}
+    51%{ transform: translateY(-96px);}
     60%{ transform: translateY(-96px);}
+    61%{ transform: translateY(-112px);}
     70%{ transform: translateY(-112px);}
+    71%{ transform: translateY(-128px);}
     80%{ transform: translateY(-128px);}
+    81%{ transform: translateY(-144px);}
     90%{ transform: translateY(-144px);}
+    91%{ transform: translateY(-160px);}
+    99.9999999%{ transform: translateY(-160px);}
+    100%{ transform: translateY(0);}
 }
 
 @keyframes seconds-hexa{
-             0%{ transform: translateY(0px);}
-    16.6666667%{ transform: translateY(-16px);}
-    33.3333333%{ transform: translateY(-32px);}
-            50%{ transform: translateY(-48px);}
-    66.6666667%{ transform: translateY(-64px);}
-    83.3333333%{ transform: translateY(-80px);}
+             0%{ transform: translateY(-16px);}
+            16%{ transform: translateY(-16px);}
+    16.6666667%{ transform: translateY(-32px);}
+    32.6666667%{ transform: translateY(-32px);}
+    33.3333333%{ transform: translateY(-48px);}
+    49.3333333%{ transform: translateY(-48px);}
+            50%{ transform: translateY(-64px);}
+            66%{ transform: translateY(-64px);}
+    66.6666667%{ transform: translateY(-80px);}
+    82.6666667%{ transform: translateY(-80px);}
+    83.3333333%{ transform: translateY(-96px);}
+    99.9999999%{ transform: translateY(-96px);}
+           100%{ transform: translateY(-16px);}
 }
 
 @keyframes seconds-ones{
-     0%{ transform: translateY(0px);}
-    10%{ transform: translateY(-16px);}
-    20%{ transform: translateY(-32px);}
-    30%{ transform: translateY(-48px);}
-    40%{ transform: translateY(-64px);}
-    50%{ transform: translateY(-80px);}
-    60%{ transform: translateY(-96px);}
-    70%{ transform: translateY(-112px);}
-    80%{ transform: translateY(-128px);}
-    90%{ transform: translateY(-144px);}
+    0%{ transform: translateY(-16px);}
+    10%{ transform: translateY(-32px);}
+    20%{ transform: translateY(-48px);}
+    30%{ transform: translateY(-64px);}
+    40%{ transform: translateY(-80px);}
+    50%{ transform: translateY(-96px);}
+    60%{ transform: translateY(-112px);}
+    70%{ transform: translateY(-128px);}
+    80%{ transform: translateY(-144px);}
+    90%{ transform: translateY(-160px);}
+    90.000001%{ transform: translateY(0);}
 }
 /* End: Countdown timer */
 
@@ -223,3 +242,97 @@ html{
     border-left: 2rem solid #eac730;
 }
 /* End: discount badge */
+
+/* Animation slide banner*/
+.slide__banner{
+    width: 79.6rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+
+.slide__banner ul{
+    width: 796rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    animation: slide_scroll 50s ease infinite;
+}
+
+.slide__banner .slide__item{
+    list-style: none;
+    width: 10%;
+}
+
+.slide__banner .slide__item-link{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.slide__banner .silde__item-link--content{
+    width: 100%;
+    height: 23.6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide_scroll{
+     0%{ transform: translateX(-079.6rem);}
+     9%{ transform: translateX(-079.6rem);}
+    10%{ transform: translateX(-159.2rem);}
+    19%{ transform: translateX(-159.2rem);}
+    20%{ transform: translateX(-238.8rem);}
+    29%{ transform: translateX(-238.8rem);}
+    30%{ transform: translateX(-318.4rem);}
+    39%{ transform: translateX(-318.4rem);}
+    40%{ transform: translateX(-398.0rem);}
+    49%{ transform: translateX(-398.0rem);}
+    50%{ transform: translateX(-477.6rem);}
+    59%{ transform: translateX(-477.6rem);}
+    60%{ transform: translateX(-557.2rem);}
+    69%{ transform: translateX(-557.2rem);}
+    70%{ transform: translateX(-636.8rem);}
+    79%{ transform: translateX(-636.8rem);}
+    80%{ transform: translateX(-716.4rem);}
+    89%{ transform: translateX(-716.4rem);}
+    90%{ transform: translateX(-796.0rem);}
+    90.0001%{ transform: translateX(0rem);}
+}
+
+.slide__banner .slide__carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+
+.slide__banner .slide__carousel-dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid hsla(0, 0%, 53.7%, 0.4);
+    background: hsla(0, 0%, 100%, 0.4);
+    animation: corousel-scroll 50s linear infinite;
+}
+
+.slide__banner .slide__carousel-dot:nth-child(1){ animation-delay: 0s;}
+.slide__banner .slide__carousel-dot:nth-child(2){ animation-delay: 5s;}
+.slide__banner .slide__carousel-dot:nth-child(3){ animation-delay: 10s;}
+.slide__banner .slide__carousel-dot:nth-child(4){ animation-delay: 15s;}
+.slide__banner .slide__carousel-dot:nth-child(5){ animation-delay: 20s;}
+.slide__banner .slide__carousel-dot:nth-child(6){ animation-delay: 25s;}
+.slide__banner .slide__carousel-dot:nth-child(7){ animation-delay: 30s;}
+.slide__banner .slide__carousel-dot:nth-child(8){ animation-delay: 35s;}
+.slide__banner .slide__carousel-dot:nth-child(9){ animation-delay: 40s;}
+.slide__banner .slide__carousel-dot:nth-child(10){ animation-delay: 45s;}
+
+@keyframes corousel-scroll{
+    0%{  background: #f53d2d;}
+    9%{  background: #f53d2d;}
+    11%{ background: hsla(0, 0%, 100%, 0.4);}
+}
+/* End: Animation slide banner */
