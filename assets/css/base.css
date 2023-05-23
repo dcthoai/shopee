@@ -221,6 +221,31 @@ html{
 }
 /* End: mall */
 
+/* Favorite labels */
+.shopee__favourite-label{
+    width: 74px;
+    height: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white-color);
+    background: #f25220;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: relative;
+}
+
+.shopee__favourite-label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 3px solid #f25220;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+/* End: Favorite labels */
+
 /* Discount badge */
 .shopee__discount{
     width: 40px;
@@ -252,10 +277,10 @@ html{
     position: absolute;
     top: 102%;
     left: 0;
-    width: 0.75px;
-    border-right: 2rem solid #eac730;
+    width: 0.4px;
+    border-right: 20px solid #eac730;
     border-bottom: 6px solid transparent;
-    border-left: 2rem solid #eac730;
+    border-left: 20px solid #eac730;
 }
 /* End: discount badge */
 
