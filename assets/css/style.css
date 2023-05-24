@@ -729,6 +729,8 @@ body{
     margin-bottom: 1.2rem;
     border: 1px solid #fff;
     transition: all 0.25s ease;
+    box-shadow: 0 1px 2px 0 rgba(0 , 0, 0, .1);
+    border-radius: 2px;
 }
 
 .product-suggest .product:hover{
@@ -778,11 +780,45 @@ body{
 
 .product-suggest .product__info .product__info-heading{
     color: var(--black-color);
-    height: 2.8rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .product-suggest .product__info-sale{
-    height: 2.8rem;
+    margin-top: 4px;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-suggest .product__info-sale .product__info-sale--flash{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 1px 4px;
+    color: #ee4d2d;
+    border: 1px solid #ee4d2d;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.product-suggest .product__info-sale .product__info-sale--badge{
+    background: #f69113;
+    color: #fff;
+    border: 1px solid #f69113;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 1px 4px;
+    flex-shrink: 0;
+    max-width: 60%;
+    margin-right: 4px;
 }
 
 .product-suggest .product__info-prime{
@@ -803,7 +839,7 @@ body{
 
 .product-suggest .product__info-prime .prime-unit{
     font-size: 1rem;
-    text-decoration: underline;
+    margin-top: 2px;
 }
 
 .product-suggest .product__info-prime .sold__count{
