@@ -318,19 +318,24 @@ body{
     flex-direction: column;
 }
 
-.slider .container__banner-items{
+.slider .container__banner a{
     width: 100%;
     height: 49%;
+}
+
+.slider .container__banner-items{
+    width: 100%;
+    height: 100%;
     background: #d0a5a5;
     border-radius: 2px;
 }
 
-.slider .container__banner-items:first-child{
+.slider .container__banner a:first-child .container__banner-items{
     background-image: url(https://cf.shopee.vn/file/vn-50009109-f0207c23044c4b2a4f76011f2f07e75d_xhdpi);
     background-size: cover;
 }
 
-.slider .container__banner-items{
+.slider .container__banner a .container__banner-items{
     background-image: url(https://cf.shopee.vn/file/vn-50009109-2babd00b13238745f82ccefc434d0dea_xhdpi);
     background-size: cover;
 }
@@ -341,26 +346,37 @@ body{
     justify-content: space-around;
 }
 
-.slider .nav-app__items{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48px;
+.slider .nav-app__link{
+    color: var(--black-color);
+    display: block;
+    text-decoration: none;
     transition: all 0.15s ease;
 }
 
-.slider .nav-app__items:hover{
+.slider .nav-app__link:hover{
     transform: translateY(-2px);
     cursor: pointer;
 }
 
-.slider .nav-app__items .nav-app__items-icon{
+.slider .nav-app__link .link__item{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.slider .link__item .link__item-icon{
     display: block;
 }
 
-.slider .nav-app__items p{
+.slider .link__item .link__item-heading{
+    margin: .8rem 0;
     text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 /* End: Banner advertisement*/
 
@@ -692,7 +708,16 @@ body{
 
 /* Product suggestions*/
 .product-suggest{
+    position: relative;
     margin-top: 3.2rem;
+    margin-bottom: 7.4rem;
+}
+
+.product-suggest .product-suggest__nav{
+    position: sticky;
+    top: 12.6rem;
+    width: 100%;
+    z-index: 9;
 }
 
 .product-suggest .product-suggest__header{
@@ -871,10 +896,11 @@ body{
 }
 
 .product-suggest .product-suggest__btn-showmore{
-    width: 40rem;
+    width: 12rem;
     height: 4.2rem;
     border-radius: 2px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03);
     background: var(--white-color);
     margin: 1.6rem auto;
     text-align: center;
