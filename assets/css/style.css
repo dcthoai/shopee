@@ -63,9 +63,10 @@ body{
     top: 50%;
     right: 0;
     z-index: 1;
-    display: none;
-    transform-origin: calc(100% - 3.6rem) 1rem;
-    animation: Growth ease-in 0.2s;
+    transform: scale(0);
+    opacity: 0;
+    transition: all ease 0.25s;
+    transform-origin: calc(100% - 3.4rem) 1.2rem;
 }
 
 .header .notify .notify__wrapper{
@@ -81,7 +82,8 @@ body{
 }
 
 .header .navbar__items-notify:hover .notify{
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header .notify__info{
@@ -127,11 +129,12 @@ body{
     top: 50%;
     right: 0;
     z-index: 1;
-    display: none;
     flex-direction: column;
     align-items: center;
-    transform-origin: calc(100% - 5.2rem) 1.2rem;
-    animation: Growth ease-in 0.2s;
+    transform-origin: calc(100% - 5.8rem) 1.2rem;
+    transition: all ease 0.25s;
+    opacity: 0;
+    transform: scale(0);
 }
 
 .header .navbar__items .languages .triangle__border{
@@ -160,7 +163,8 @@ body{
 }
 
 .header .navbar__items-lang:hover .languages{
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header .navbar__items .languages__wrapper-item:hover{
@@ -291,8 +295,8 @@ body{
 }
 
 .header .wrapper__shopcart:hover .wrapper__shopcart-modal{
-    display: block;
-    animation: Growth 0.2s ease;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header .wrapper__shopcart .shopee__shopcart-icon{
@@ -307,7 +311,9 @@ body{
     position: absolute;
     top: 40%;
     right: -1.5rem;
-    display: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease 0.25s;
     transform-origin: calc(100% - 2.6rem) 1.6rem;
 }
 
