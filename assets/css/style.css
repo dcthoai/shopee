@@ -333,12 +333,10 @@ body{
     margin: 0 auto;
     margin-top: 2.8rem;
     width: 18.6rem;
-    height: 18.6rem;
-    background: url(/assets/img/icon-shopcart.png) 100% / contain no-repeat;
 }
 
 .header .wrapper__shopcart-modal .shopcart__modal-heading{
-    height: 6.4rem;
+    height: 8.4rem;
     text-align: center;
     color: #7d7d7d;
 }
